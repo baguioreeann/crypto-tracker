@@ -15,7 +15,7 @@ COIN_ALIASES = {
     "xrp": "ripple",
 }
 
-DEFAULT_CURRENCY = "usd"
+DEFAULT_CURRENCY = "aud"
 
 
 def resolve_coin_id(coin):
@@ -43,7 +43,7 @@ def main():
     args = sys.argv[1:]
 
     if not args:
-        print("Usage: python3 crypto.py <coin> [coin2 ...] [--currency usd]")
+        print("Usage: python3 crypto.py <coin> [coin2 ...] [--currency aud]")
         print("Example: python3 crypto.py bitcoin ethereum")
         print(f"Known shortcuts: {', '.join(sorted(COIN_ALIASES))}")
         sys.exit(1)

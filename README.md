@@ -7,17 +7,17 @@ A small command-line tool that fetches live cryptocurrency prices from the
 
 ```bash
 python3 crypto.py bitcoin ethereum
-python3 crypto.py btc eth sol --currency eur
+python3 crypto.py btc eth sol --currency usd
 ```
 
-Supports shortcuts for common coins: `btc`, `eth`, `sol`, `doge`, `ada`, `xrp`.
-Any other CoinGecko coin ID (e.g. `chainlink`) also works.
+Prices default to AUD. Supports shortcuts for common coins: `btc`, `eth`, `sol`,
+`doge`, `ada`, `xrp`. Any other CoinGecko coin ID (e.g. `chainlink`) also works.
 
 ## Example output
 
 ```
 $ python3 crypto.py btc eth sol
-btc: 63,402.00 USD
-eth: 1,876.51 USD
-sol: 75.58 USD
+btc: 89,840.00 AUD
+eth: 2,659.14 AUD
+sol: 107.05 AUD
 ```
